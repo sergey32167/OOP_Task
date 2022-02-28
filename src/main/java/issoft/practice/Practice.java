@@ -1,6 +1,6 @@
 package issoft.practice;
 
-public class Practice implements Cloneable {
+public class Practice {
 
     private String descriptionPractice;
     private String taskLink;
@@ -34,16 +34,6 @@ public class Practice implements Cloneable {
 
     public void setSolutionLink(String solutionLink) {
         this.solutionLink = solutionLink;
-    }
-
-    @Override
-    public Practice clone() {
-        try {
-            Practice practice = (Practice) super.clone();
-            return practice;
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
     }
 
     @Override

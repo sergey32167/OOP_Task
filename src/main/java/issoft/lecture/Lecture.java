@@ -1,6 +1,6 @@
 package issoft.lecture;
 
-public class Lecture implements Cloneable {
+public class Lecture {
 
     private String descriptionLecture;
     private String topicLecture;
@@ -24,16 +24,6 @@ public class Lecture implements Cloneable {
 
     public void setTopicLecture(String topicLecture) {
         this.topicLecture = topicLecture;
-    }
-
-    @Override
-    public Lecture clone() {
-        try {
-            Lecture lecture = (Lecture) super.clone();
-            return lecture;
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
     }
 
     @Override
